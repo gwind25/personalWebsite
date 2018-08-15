@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block heading %}
+  First Page
+{% endblock %}
+
+{% block body %}
+      <a href="{{url_for('begin') }}"> Click here to begin</a>
+      {% for name in names %}
+        <ul>{{ name }}</ul>
+      {% endfor %}
+{% endblock %}
